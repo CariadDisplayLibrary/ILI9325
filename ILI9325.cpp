@@ -99,7 +99,7 @@ uint8_t ILI9325::read(bool cont) {
     _d4_port->tris.clr = _d4_mask;
     _d5_port->tris.clr = _d5_mask;
     _d6_port->tris.clr = _d6_mask;
-    _d7_port->tris.clR = _d7_mask;
+    _d7_port->tris.clr = _d7_mask;
 
     return dat;
 }
@@ -351,7 +351,7 @@ void ILI9325::setRotation(int m) {
 	}
 }
 
-void ILI9325::invertDisplay(boolean i) {
+void ILI9325::invertDisplay(boolean __attribute__((unused)) i) {
 //	command(i ? ILI9325_INVERTON : ILI9325_INVERTOFF);
 }
 
@@ -365,7 +365,7 @@ void ILI9325::windowData(color_t c) {
 }
 
 void ILI9325::windowData(color_t *c, int len) {
-    for (uint32_t i = 0; i < len; i++) {
+    for (int i = 0; i < len; i++) {
         data(c[i] >> 8, true);
         data(c[i] & 0xFF, i < (len-1));
     }
