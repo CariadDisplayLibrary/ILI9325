@@ -351,7 +351,7 @@ void ILI9325::setRotation(int m) {
 	}
 }
 
-void ILI9325::invertDisplay(boolean __attribute__((unused)) i) {
+void ILI9325::invertDisplay(bool __attribute__((unused)) i) {
 //	command(i ? ILI9325_INVERTON : ILI9325_INVERTOFF);
 }
 
