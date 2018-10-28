@@ -12,7 +12,7 @@ XBSC-Group: DisplayCore
 XBSC-Subgroup: Drivers
 Depends: libdisplaycore-core
 Provides: ILI9325.h
-Description: ILI9325 library for DisplayCore
+Description: ILI9325
 
 
 
