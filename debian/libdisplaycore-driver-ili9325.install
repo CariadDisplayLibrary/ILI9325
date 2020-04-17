@@ -1,2 +1,3 @@
-ILI9325.cpp libraries/DisplayCore/ILI9325
-ILI9325.h libraries/DisplayCore/ILI9325
+library.json libraries/DisplayCore/ILI9325
+library.properties libraries/DisplayCore/ILI9325
+src libraries/DisplayCore/ILI9325
