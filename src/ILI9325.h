@@ -1,10 +1,10 @@
 #ifndef _ILI9325_H
 #define _ILI9325_H
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 #include <DSPI.h>
 
-class ILI9325 : public DisplayCore {
+class ILI9325 : public Cariad {
     private:
         static const uint8_t ILI932X_START_OSC          = 0x00;
         static const uint8_t ILI932X_DRIV_OUT_CTRL      = 0x01;
